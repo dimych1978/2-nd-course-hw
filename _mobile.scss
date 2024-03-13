@@ -1,0 +1,113 @@
+@media (max-width: 767px) and (min-width: 375px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .heading {
+    font-size: 32px;
+    line-height: 39px;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .event {
+    width: auto;
+    &__text {
+      display: inline-table;
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  .button {
+    margin-left: auto;
+    margin-right: auto;
+    transition: 2s;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .button:hover {
+    background: revert;
+    color: revert;
+  }
+  .challenge {
+    &__games {
+      &_1 {
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      flex-direction: column;
+      &_1 {
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &_2 {
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &_3 {
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  .challenge {
+    &__games {
+      &_link {
+        padding-left: 16px;
+        padding-bottom: 32px;
+      }
+    }
+  }
+  .seasons {
+    flex-direction: column;
+    row-gap: 64px;
+    align-items: center;
+    padding-top: 51px;
+    &__left {
+      align-items: center;
+    }
+    .play {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      &__text {
+        text-align: center;
+      }
+    }
+  }
+  .remember {
+    flex-direction: column;
+    row-gap: 64px;
+    align-items: center;
+    padding-top: 51px;
+    &__right {
+      padding-left: 0;
+      align-items: center;
+    }
+    .play {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      &__text {
+        text-align: center;
+      }
+    }
+  }
+
+  .play {
+    text-align: center;
+  }
+}

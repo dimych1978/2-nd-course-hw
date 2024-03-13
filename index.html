@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Game to play</title>
-</head>
-<body>
-    
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <section class="background">
+      <header class="header center">
+        <h1 class="heading">Добро пожаловать на мой сайт!</h1>
+      </header>
+
+      <div class="event center">
+        <p class="event__text">
+          Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+          <b>поехали</b> и <b>приступай</b>
+        </p>
+        <a href="#games"><button class="button">Поехали</button></a>
+      </div>
+    </section>
+    <section id="games" class="challenge center">
+      <div class="challenge__games">
+        <div class="challenge__games_1">
+          <a href="#seasons"><p class="challenge__games_link">Игра1</p></a>
+        </div>
+        <div class="challenge__games_2">
+          <a href="#remember"><p class="challenge__games_link">Игра2</p></a>
+        </div>
+        <div class="challenge__games_3">
+          <a href="#puzzle"><p class="challenge__games_link">Игра3</p></a>
+        </div>
+      </div>
+    </section>
+    <section id="seasons" class="seasons center">
+      <div class="seasons__left">
+        <h2 class="play">Времена года!</h2>
+        <p class="play__text">
+          Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете
+          к какому времени года он относится
+        </p>
+        <a onclick="calendar ()" href="#"
+          ><button class="button">Играть!</button></a
+        >
+      </div>
+      <div class="seasons__right">
+        <img src="img/gamePlace.svg" alt="Джойстик" />
+      </div>
+    </section>
+        <section id="remember" class="remember center">
+          <div class="remember__left">
+            <img src="img/gamePlace-1.svg" alt="Джойстик" />
+          </div>
+          <div class="remember__right">
+            <h2 class="play">Запомни слова!</h2>
+            <p class="play__text">
+              При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+              необходимо запомнить.
+            </p>
+            <a onclick="words ()" href="#"><button class="button">Играть!</button></a>
+          </div>
+        </section>
+
+<footer class="footer">
+    Все права защищены
+</footer>
+    <script src="index.js"></script>
+  </body>
 </html>
