@@ -27,7 +27,7 @@ function isMale(man) {
 function filter(arr, ruleFunction) {
   const output = [];
   for (let i = 0; i < arr.length; i++) {
-    ruleFunction(arr[i]) && output.push(arr[i]);
+   if( ruleFunction(arr[i])) output.push(arr[i]);
   }
   return output;
 }
@@ -46,13 +46,17 @@ console.log(filter(peopleFromTask2, isMale));
 // Задание 3
 // Напишите программу, которая на протяжении 30 секунд каждые 3 секунды будет выводить в консоль текущую дату. Последней строкой должно выводиться сообщение «30 секунд прошло».
 
-(function thisDate() {
-  const currentTime = setInterval(() => console.log(new Date()), 3000);
-  setTimeout(() => {
-    clearInterval(currentTime);
-    console.log("30 секунд прошло");
-  }, 30000);
-})();
+function thisDate(msg) {
+  let date30 = new Date().getSeconds() + 30;
+  let currentTime = setInterval(() => {
+    console.log(new Date());
+    if (date30 === +new Date().getSeconds()) {
+      clearInterval(currentTime);
+      console.log(msg);
+    }
+  }, 3000);
+}
+thisDate("30 секунд прошло");
 
 // Задание 4
 // Сейчас код ниже выводит в консоль «Привет, Глеб!» сразу после запуска.
